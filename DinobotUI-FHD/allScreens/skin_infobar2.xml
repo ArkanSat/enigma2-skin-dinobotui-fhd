@@ -1,0 +1,302 @@
+ <skin>
+ <screen name="InfoBar" position="0,0" size="1920,1080" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="0" size="1920,1080" pixmap="DinobotUI-FHD/images/infobar.png" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/beoff.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">BetaCas</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/beon.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">BetaEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    		</widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/droff.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">DreamCas</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/dron.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">DreamEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    		</widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/iroff.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">IrdCas</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/iron.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">IrdEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    		</widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/boff.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">BissCas</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/bon.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">BissEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    		</widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/soff.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">SecaCas</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/son.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">SecaEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    		</widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/voff.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">ViaCas</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/von.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">ViaEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    		</widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/noff.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">NagraCas</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/non.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">NagraEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    		</widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/cwoff.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">CrwCas</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/cwon.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">CrwEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    		</widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/coff.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBCaidInfo2">ConaxCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/con.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBCaidInfo2">ConaxEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    		</widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/ndoff.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">NdsCas</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/ndon.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">NdsEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    		</widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/exoff.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">ExsCas</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/exon.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBEcmInfo">ExsEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/buloff.png" position="197,815" size="55,27" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="DBEcmInfo">BulCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/bulon.png" position="197,815" size="55,27" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="DBEcmInfo">BulEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/drcoff.png" position="197,815" size="55,27" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="DBEcmInfo">DrcCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/drcon.png" position="197,814" size="55,27" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="DBEcmInfo">DrcEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/poff.png" position="197,815" size="55,27" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="DBEcmInfo">PwvCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/pon.png" position="197,815" size="55,27" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="DBEcmInfo">PwvEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/vmxoff.png" position="197,815" size="55,27" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="DBEcmInfo">VmxCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/vmxon.png" position="197,815" size="55,27" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="DBEcmInfo">VmxEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/tanoff.png" position="197,815" size="55,27" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="DBEcmInfo">TbgCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/tanon.png" position="197,815" size="55,27" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="DBEcmInfo">TbgEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/tfoff.png" position="197,815" size="55,27" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="DBEcmInfo">TgfCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/tfon.png" position="197,815" size="55,27" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="DBEcmInfo">TgfEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/panoff.png" position="197,815" size="55,27" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="DBEcmInfo">PanCaS</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/panon.png" position="197,815" size="55,27" zPosition="4" alphatest="blend" transparent="1">
+      <convert type="DBEcmInfo">PanEcm</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    		</widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/crdoff.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBCaidInfo2">Crd</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/crdon.png" position="197,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="DBCaidInfo2">CrdTxt</convert>
+      <convert type="ConditionalShowHide" >Blink</convert>
+    		</widget>
+    <ePixmap position="138,815" zPosition="2" size="55,27" pixmap="DinobotUI-FHD/crypt/fta.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/crypt/crd.png" position="138,815" zPosition="4" size="55,27" alphatest="blend">
+      <convert type="ServiceInfo">IsCrypted</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="260,809" size="693,38" font="Art1; 32" backgroundColor="white" transparent="1" valign="center" halign="left" zPosition="1">
+      <convert type="ServiceName">Name</convert>    </widget>
+    <eLabel text="-" position="510,940" size="5,30" halign="center" font="Regular; 22" foregroundColor="darkgrey" backgroundColor="gris2" transparent="1" zPosition="1" />
+    <eLabel name="snr" position="1480,958" size="94,30" halign="left" transparent="1" text="SNR :" font="Regular; 22"  zPosition="2" foregroundColor="black" backgroundColor="black" />
+    <eLabel name="agc" position="1480,994" size="90,30" halign="left" transparent="1" text="AGC :" font="Regular; 22"  zPosition="2" foregroundColor="black" backgroundColor="black" />
+    <widget source="session.FrontendStatus" render="Progress" position="1561,969" zPosition="3" pixmap="DinobotUI-FHD/snr.png" size="187,12" backgroundColor="black"  >
+			<convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Label" position="1762,961" size="30,27" backgroundColor="black" transparent="1" halign="left" font="Regular; 22" zPosition="2" foregroundColor="black">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Label" position="1762,997" size="30,27" backgroundColor="black" transparent="1" halign="left" font="Regular; 22" zPosition="2" foregroundColor="black">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Progress" position="1560,1006" zPosition="3" pixmap="DinobotUI-FHD/agc.png" size="187,10" backgroundColor="black" > <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    		<eLabel name="com" text="Status:" position="437,982" size="60,20" font="Regular;16" halign="Left" backgroundColor="black" foregroundColor="black" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="502,982" size="621,20" zPosition="3" font="Regular; 16" halign="left" noWrap="1" foregroundColor="black" backgroundColor="black" transparent="1">
+      <convert type="DBCaidInfo2">Emuku</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="437,1007" zPosition="3" size="525,18" font="Regular; 16" halign="left" foregroundColor="black" backgroundColor="black" transparent="1">
+      <convert type="DBServiceName2">%S %T</convert>
+
+    </widget>
+    <!-- icon -->
+    <ePixmap pixmap="DinobotUI-FHD/christ-icons/dolby_of.png" position="1018,992" size="72,50" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/christ-icons/dolby_on.png" position="1018,992" size="72,50" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="DinobotUI-FHD/christ-icons/format_of.png" position="1286,992" size="72,50" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/christ-icons/format_on.png" position="1286,992" size="72,50" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">IsWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="DinobotUI-FHD/christ-icons/txt_of.png" position="1085,992" size="72,50" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/christ-icons/txt_on.png" position="1085,992" size="72,50" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">HasTelext</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="DinobotUI-FHD/christ-icons/crypt_of.png" position="1219,992" size="72,50" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/christ-icons/crypt_on.png" position="1219,992" size="72,50" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">IsCrypted</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" position="1353,992" size="72,50" zPosition="2" pixmap="DinobotUI-FHD/christ-icons/4k_on.png" alphatest="blend">
+      <convert type="ServiceInfo">Is4K</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap position="1353,992" size="72,50" zPosition="1" pixmap="DinobotUI-FHD/christ-icons/hd_of.png" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" position="1353,992" size="72,50" zPosition="2" pixmap="DinobotUI-FHD/christ-icons/hd_on.png" alphatest="blend">
+      <convert type="ServiceInfo">IsHD</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" position="1353,992" size="72,50" zPosition="2" pixmap="DinobotUI-FHD/christ-icons/sd_on.png" alphatest="blend">
+      <convert type="ServiceInfo">IsSD</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="DinobotUI-FHD/christ-icons/rec_off.png" position="1410,885" size="65,49" zPosition="1" alphatest="blend" />
+    <widget source="session.RecordState" render="Pixmap" pixmap="DinobotUI-FHD/christ-icons/rec_on.png" position="1410,885" size="64,50" zPosition="2" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <ePixmap pixmap="DinobotUI-FHD/audio/audio_off.png" position="951,992" size="72,50" zPosition="1" alphatest="blend" transparent="1" />
+    <widget source="session.CurrentService" position="951,992" render="DBAudioIcon" size="72,50" alphatest="blend" path="icons/audio" zPosition="2" transparent="1">
+      <convert type="DBAudioInfo">AudioIcon</convert>
+    </widget>
+    <ePixmap pixmap="DinobotUI-FHD/christ-icons/sub_off.png" position="1152,992" size="72,50" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/christ-icons/sub_on.png" position="1152,992" size="72,50" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">SubservicesAvailable</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Picon" position="156,871" size="241,150" zPosition="10" transparent="1" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="400,885" size="100,32" halign="right" font="Regular; 22" foregroundColor="black" backgroundColor="gris2" transparent="1" zPosition="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%0H:%M</convert>
+    </widget>
+    <eLabel text="-" position="510,885" size="5,30" halign="center" font="Regular; 22" foregroundColor="black" backgroundColor="gris2" transparent="1" zPosition="1" />
+    <widget source="session.Event_Now" render="Label" position="525,885" size="100,32" halign="left" font="Regular; 22" foregroundColor="black" backgroundColor="gris2" transparent="1" zPosition="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%0H:%M</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="640,885" size="600,30" halign="left" font="Regular; 26" foregroundColor="black" backgroundColor="black" transparent="1" noWrap="1" zPosition="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="1250,885" size="138,30" halign="left" font="Regular; 22" foregroundColor="black" backgroundColor="gris2" transparent="1" zPosition="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <ePixmap pixmap="DinobotUI-FHD/christ-icons/progress.png" position="640,925" size="600,5" zPosition="1" alphatest="blend" />
+    <widget source="session.Event_Now" render="Progress" pixmap="DinobotUI-FHD/christ-icons/bark.png" position="640,924" size="600,7" backgroundColor="black" zPosition="2" transparent="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="400,940" size="100,32" halign="right" font="Regular; 22" foregroundColor="darkgrey" backgroundColor="gris2" transparent="1" zPosition="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%0H:%M</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="525,940" size="100,32" halign="left" font="Regular; 22" foregroundColor="darkgrey" backgroundColor="gris2" transparent="1" zPosition="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%0H:%M</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="640,940" size="600,30" halign="left" font="Regular; 26" foregroundColor="darkgrey" backgroundColor="darkgrey" transparent="1" noWrap="1" zPosition="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="1250,940" size="138,30" halign="left" font="Regular; 22" foregroundColor="darkgrey" backgroundColor="gris2" transparent="1" zPosition="1">
+      <convert type="EventTime">Duration</convert>
+      <convert type="ClockToText">InMinutes</convert>
+
+    </widget>
+    <ePixmap pixmap="DinobotUI-FHD/buttons/key_a.png" position="1480,885" size="50,50" zPosition="1" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/key_b.png" position="1535,885" size="50,50" zPosition="1" alphatest="blend" />
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="DinobotUI-FHD/buttons/key_a2.png" position="1480,885" zPosition="2" size="50,50" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="Pixmap" pixmap="DinobotUI-FHD/buttons/key_b2.png" position="1535,885" zPosition="2" size="50,50" alphatest="blend">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="DinobotUI-FHD/buttons/key_a1.png" position="1480,885" zPosition="3" size="50,50" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">0,0</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="DinobotUI-FHD/buttons/key_b1.png" position="1535,885" zPosition="3" size="50,50" alphatest="blend">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">1,1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget backgroundColor="foreground" font="Art1; 26" halign="center" position="1200,809" render="Label" size="375,37" source="global.CurrentTime" transparent="1" zPosition="10">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget backgroundColor="orange" font="Console; 30" halign="center" position="1605,815" render="Label" size="203,37" source="global.CurrentTime" transparent="1" zPosition="10" foregroundColor="orange">
+      <convert type="ClockToText">Format:%H:%M:%S</convert>
+    </widget>
+
+  </screen>
+
+ </skin>
