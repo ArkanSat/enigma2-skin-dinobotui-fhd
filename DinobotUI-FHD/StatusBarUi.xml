@@ -1,0 +1,93 @@
+<skin>
+            <!-- Main infobar  -->
+  <screen name="StatusBar" >
+       <ePixmap position="0,0"              pixmap="DinobotUI-FHD/infobar-ui.png" size="1920,1080" zPosition="-1" alphatest="blend"/>
+        <ePixmap pixmap="DinobotUI-FHD/android/t2.png" position="158,852" size="57,40" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="ChannelNumber" position="213,851" zPosition="3" size="40,40" font="DroidArt;33" foregroundColor="white" backgroundColor="grey"  halign="center" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="260,851" size="410,40" font="Art1; 33" zPosition="2" noWrap="1" foregroundColor="bluelight_ui" backgroundColor="bluelight_ui" transparent="1" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+		<eLabel text="S :" position="1365,967" size="50,50" font="Art1;30" backgroundColor="bluelight_ui" transparent="1" foregroundColor="bluelight_ui" halign="right" valign="bottom" />
+		<eLabel text="Q :" position="1520,967" size="50,50" font="Art1;30" backgroundColor="bluelight_ui" transparent="1" foregroundColor="bluelight_ui" halign="right" valign="bottom" />
+    <widget backgroundColor="black" transparent="1" font="DroidArt;30"  foregroundColor="greylight_ui" halign="left" valign="bottom"  position="1420,969" render="Label" size="80,50" source="session.FrontendStatus" zPosition="1">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <widget backgroundColor="black" transparent="1" font="DroidArt; 30"  foregroundColor="greylight_ui" halign="left" valign="bottom"  position="1575,969" render="Label" size="80,50" source="session.FrontendStatus" zPosition="1">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <widget font="Art1;30" halign="left" valign="bottom"  position="1680,967" render="Label" size="110,50" source="global.CurrentTime"  zPosition="10" foregroundColor="white"  backgroundColor="white" transparent="1">
+      <convert type="ClockToText">Format:%0H:%M</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="720,856" size="100,32" halign="right" font="Art1; 26" foregroundColor="greylight_ui" backgroundColor="greylight_ui" transparent="1" zPosition="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%0H:%M</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="860,856" size="600,32" halign="left" font="Art1; 26" foregroundColor="greylight_ui" backgroundColor="grey" transparent="1" noWrap="1" zPosition="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="1580,856" size="138,32" halign="right" font="Art1; 26" foregroundColor="greylight_ui" backgroundColor="grey" transparent="1" zPosition="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Progress" pixmap="DinobotUI-FHD/android/bar-progress.png" position="154,1007" size="500,8"  zPosition="2" transparent="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="720,915" size="100,32" halign="right" font="Art1; 26" foregroundColor="greylight_ui" backgroundColor="grey" transparent="1" zPosition="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%0H:%M</convert>
+    </widget>
+
+    <widget source="session.Event_Next" render="Label" position="860,915" size="600,32" halign="left" font="Art1; 26" foregroundColor="greylight_ui" backgroundColor="grey" transparent="1" noWrap="1" zPosition="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="1580,915" size="138,32" halign="right" font="Art1; 26" foregroundColor="greylight_ui" backgroundColor="grey" transparent="1" zPosition="1">
+      <convert type="EventTime">Duration</convert>
+      <convert type="ClockToText">InMinutes</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="158,925" zPosition="3" size="510,40" font="Art1; 28" halign="left" backgroundColor="grey" foregroundColor="greylight_ui" transparent="1" >
+      <convert type="DBServiceName2">%F %p %Y %s </convert>
+	</widget>
+    <widget source="session.CurrentService" render="Label" position="158,970" zPosition="3" size="510,40" font="Art1; 28" halign="left" backgroundColor="grey_ui" foregroundColor="grey_ui" transparent="1" >
+      <convert type="DBServiceName">%S</convert>
+	</widget>
+    <!-- icon -->
+    <ePixmap pixmap="DinobotUI-FHD/android/menu.png" position="710,968" size="70,60" zPosition="1" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/android/crypt_off.png" position="790,968" size="45,60" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/android/crypt_on.png" position="790,968" size="45,60" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">IsCrypted</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+      <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/android/card_off.png" position="844,968" zPosition="7" size="45,60" alphatest="blend">       <convert type="DBEcmInfo">Crd</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/android/card_on.png" position="844,968" zPosition="8" size="45,60" alphatest="blend">
+      <convert type="DBEcmInfo">CrdTxt</convert>
+      <convert type="ConditionalShowHide" />
+    		</widget>
+    <ePixmap pixmap="DinobotUI-FHD/android/sub_off.png" position="900,968" size="70,60" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/android/sub_on.png" position="900,968" size="70,60" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">SubservicesAvailable</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="DinobotUI-FHD/android/txt_off.png" position="983,968" size="70,60" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/android/txt_on.png" position="983,968" size="70,60" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">HasTelext</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="DinobotUI-FHD/android/audio_off.png" position="1063,968" size="45,60" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/android/audio_on.png" position="1063,968" size="45,60" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">IsStereo</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="DinobotUI-FHD/android/dolby_off.png" position="1118,968" size="45,60" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="DinobotUI-FHD/android/dolby_on.png" position="1118,968" size="45,60" zPosition="2" alphatest="blend">
+      <convert type="ServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="DinobotUI-FHD/android/rec_off.png" position="1176,968" size="70,60" zPosition="1" alphatest="blend" />
+     <widget source="session.RecordState" render="Pixmap"  pixmap="DinobotUI-FHD/android/rec_on.png" position="1176,968" size="70,60" zPosition="2" alphatest="blend">
+       <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <ePixmap pixmap="DinobotUI-FHD/android/live.png" position="1261,968" size="70,60" zPosition="1" alphatest="blend" /> 
+  </screen>
+</skin>
+ 

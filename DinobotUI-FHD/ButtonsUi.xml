@@ -1,0 +1,113 @@
+<skin>
+
+  <screen name="ok_ex">
+    <ePixmap pixmap="DinobotUI-FHD/buttons/ok.png" position="755,935" size="112,71" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/exit.png" position="1040,935" size="112,71" alphatest="blend" />
+     <eLabel text="Enter" position="647,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <eLabel text="Home" position="933,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+  </screen>
+  <screen name="rg">
+    <ePixmap pixmap="DinobotUI-FHD/buttons/red1.png" position="755,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/green1.png" position="1040,923" size="86,64" alphatest="blend" />
+     <widget source="key_red" render="Label" position="657,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+    <widget source="key_green" render="Label" position="961,970" size="240,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+  </screen>
+  <screen name="btn_ch">
+    <ePixmap pixmap="DinobotUI-FHD/buttons/red1.png" position="145,929" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/green1.png" position="392,929" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/yellow1.png" position="650,929" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/blue1.png" position="905,929" size="86,64" alphatest="blend" />
+    <widget name="key_red" position="65,1000" size="240,48" zPosition="1" font="Regular;30" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+    <widget name="key_green" position="320,1000" size="240,48" zPosition="1" font="Regular;30" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+    <widget name="key_yellow" position="575,1000" size="240,48" zPosition="1" font="Regular;30" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+    <widget name="key_blue" position="835,1000" size="240,48" zPosition="1" font="Regular;30" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+    <eLabel text="TV/Radio" position="1090,1000" size="240,48" zPosition="1" font="Regular;30" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+    <eLabel text="View Event" position="1345,1000" size="240,48" zPosition="1" font="Regular;30" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+    <eLabel text="SubFunction" position="1610,1000" size="240,48" zPosition="1" font="Regular;30" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/tvr.png" position="1157,929" zPosition="3" size="112,72" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/info-ch.png" position="1421,937" zPosition="3" size="112,72" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/menu-ch.png" position="1682,937" zPosition="3" size="112,72" alphatest="blend" transparent="1" />
+  </screen>
+  <screen name="rgyb">
+    <ePixmap pixmap="DinobotUI-FHD/buttons/red1.png" position="510,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/green1.png" position="775,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/yellow1.png" position="1045,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/blue1.png" position="1320,923" size="86,64" alphatest="blend" />
+     <widget source="key_red" render="Label" position="410,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <widget source="key_green" render="Label" position="677,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+    <widget source="key_yellow" render="Label" position="964,970" size="240,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+    <widget source="key_blue" render="Label" position="1245,970" size="240,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+  </screen>
+  <screen name="InfoRgy">
+    <ePixmap pixmap="DinobotUI-FHD/buttons/red1.png" position="775,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/green1.png" position="1045,925" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/yellow1.png" position="1320,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/info.png" position="510,935" size="112,71" alphatest="blend" />
+     <widget source="key_red" render="Label" position="677,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <widget source="key_green" render="Label" position="964,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+    <widget source="key_yellow" render="Label" position="1245,970" size="240,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <eLabel text="Information" position="410,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+  </screen>
+  <screen name="MenuRgy">
+    <ePixmap pixmap="DinobotUI-FHD/buttons/red1.png" position="775,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/green1.png" position="1045,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/yellow1.png" position="1320,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/menu.png" position="510,935" size="112,71" alphatest="blend" />
+     <widget source="key_red" render="Label" position="677,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <widget source="key_green" render="Label" position="964,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+    <widget source="key_yellow" render="Label" position="1245,970" size="240,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <eLabel text="SubFunction" position="410,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+  </screen>
+  <screen name="MenuRgb">
+    <ePixmap pixmap="DinobotUI-FHD/buttons/red1.png" position="775,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/green1.png" position="1045,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/blue1.png" position="1320,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/menu.png" position="510,935" size="112,71" alphatest="blend" />
+     <widget name="key_red" render="Label" position="677,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <widget name="key_green" render="Label" position="964,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+    <widget name="key_blue" render="Label" position="1245,970" size="240,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <eLabel text="SubFunction" position="410,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+  </screen>
+  <screen name="rgyb_dream">
+    <ePixmap pixmap="DinobotUI-FHD/buttons/red1.png" position="510,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/green1.png" position="775,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/yellow1.png" position="1045,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/blue1.png" position="1320,923" size="86,64" alphatest="blend" />
+     <eLabel text="Delete" render="Label" position="410,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <eLabel text="Rename" render="Label" position="677,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+      <eLabel text="Move/Copy" render="Label" position="964,970" size="240,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <eLabel text="Bookmarks"  render="Label" position="1245,970" size="240,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+  </screen>
+  <screen name="rg_text">
+    <ePixmap pixmap="DinobotUI-FHD/buttons/red1.png" position="755,935" size="112,71" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/green1.png" position="1040,935" size="112,71" alphatest="blend" />
+     <eLabel text="Cancel" position="647,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <eLabel text="Save" position="933,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+  </screen>
+  <screen name="MenuOkText_Wind">
+    <ePixmap pixmap="DinobotUI-FHD/buttons/menu.png" position="201,680" zPosition="3" size="112,72" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/ok.png" position="946,680" zPosition="3" size="112,72" alphatest="blend" transparent="1" />
+    <eLabel text="SubFunction" position="143,712" zPosition="3" size="170,72"  font="Art1; 28" halign="center" valign="center" alphatest="blend" transparent="1" />
+    <eLabel text="Enter" position="893,712" zPosition="3" size="170,72"  font="Art1; 28" halign="center" valign="center"  alphatest="blend" transparent="1" />
+  </screen>
+  <screen name="MmpBut">
+    <ePixmap pixmap="DinobotUI-FHD/buttons/ch+.png" position="785,935" size="112,71" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/ch-.png" position="1055,935" size="112,71" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/info.png" position="1330,935" size="112,71" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/menu.png" position="510,935" size="112,71" alphatest="blend" />
+     <eLabel text="Repeat" render="Label" position="677,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <eLabel text="Shuffle" render="Label" position="944,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <eLabel text="Lyric" render="Label" position="1243,970" size="240,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <eLabel text="SubFuction" position="410,970" size="268,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+  </screen>
+  <screen name="Mmp_rgyb_text">
+    <ePixmap pixmap="DinobotUI-FHD/buttons/red1.png" position="510,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/green1.png" position="775,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/yellow1.png" position="1045,923" size="86,64" alphatest="blend" />
+    <ePixmap pixmap="DinobotUI-FHD/buttons/blue1.png" position="1320,923" size="86,64" alphatest="blend" />
+     <eLabel text="Play" render="Label" position="410,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <eLabel text="Play all" render="Label" position="680,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <eLabel text="Next play" render="Label" position="964,970" size="240,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <eLabel text="Add" render="Label" position="1245,970" size="240,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+  </screen>
+</skin>

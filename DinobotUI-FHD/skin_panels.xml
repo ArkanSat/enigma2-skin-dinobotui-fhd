@@ -1,0 +1,7 @@
+<skin>
+  <!--ePANELS-->
+  <screen name="chbg">
+    <ePixmap position="0,0" zPosition="-1" size="1920,1080" pixmap="DinobotUI-FHD/android/channel_bg.png" />
+  </screen>
+
+</skin>

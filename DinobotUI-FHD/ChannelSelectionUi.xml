@@ -1,0 +1,134 @@
+<skin>
+  <!--  Channel Selection TV  -->
+  <screen name="Channel Selection" title="Channel Selection" >
+    <panel name="chbg" />
+    <widget backgroundColor="greylight_ui" foregroundColor="greylight_ui" font="Art1; 40" halign="center" position="190,160" render="Label" size="600,50" source="Title" transparent="1" valign="center" zPosition="3" />
+    <widget source="global.CurrentTime" render="Label" position="1654,25" size="203,42" zPosition="10" font="Art1; 38" halign="right" backgroundColor="white" transparent="1" foregroundColor="white">
+      <convert type="ClockToText">Format:%H:%M:%S</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1190,30" zPosition="3" size="484,42" font="Art1; 28" halign="right" valign="bottom" backgroundColor="white" transparent="1">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget name="list" position="206,230" size="591,642" enableWrapAround="1" foregroundColor="greylight_ui" foregroundColorServiceNotAvail="darkgrey1" colorEventProgressbarSelected="orange" colorServiceDescription="darkgrey1" colorServiceDescriptionSelected="darkgrey1" serviceItemHeight="70" serviceNumberFont="Art1;26" serviceNameFont="Regular;32" serviceInfoFont="Regular;22" 
+ selectionPixmap="DinobotUI-FHD/images/sel591x70.png" transparent="0" />
+
+    <!-- Line top -->
+    <eLabel name="Line" position="205,230" size="1,639" backgroundColor="grey"/>
+    <eLabel name="Line" position="206,230" size="591,1" backgroundColor="grey"/>
+    <eLabel name="Line" position="797,230" size="1,639" backgroundColor="grey"/>
+    <eLabel name="Line" position="206,868" size="591,1" backgroundColor="grey"/>
+    <!-- Line bottom -->
+    <eLabel name="Line" position="311,926" size="2,123" backgroundColor="grey"/>
+    <eLabel name="Line" position="567,926" size="2,123" backgroundColor="grey"/>
+    <eLabel name="Line" position="822,926" size="2,123" backgroundColor="grey"/>
+    <eLabel name="Line" position="1077,926" size="2,123" backgroundColor="grey"/>
+    <eLabel name="Line" position="1332,926" size="2,123" backgroundColor="grey"/>
+    <eLabel name="Line" position="1587,926" size="2,123" backgroundColor="grey"/>
+    <ePixmap pixmap="DinobotUI-FHD/android/t2.png" position="875,167" size="57,40" zPosition="1" alphatest="blend" />
+    <widget source="ServiceEvent" render="Label" position="932,167" size="777,40" zPosition="1" font="Art1; 30" halign="left" valign="center" backgroundColor="grey" foregroundColor="greylight_ui" transparent="1">
+      <convert type="DBServiceName2">%S %F %p %Y %s</convert>
+		</widget>
+    <widget source="ServiceEvent" render="Label" position="880,238" zPosition="1" size="830,40" font="Art1; 36" halign="center" valign="center" backgroundColor="black" transparent="1" foregroundColor="grey_ui">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+  <widget source="ServiceEvent" render="Label" position="940,318" size="676,60" font="DroidArt; 27" backgroundColor="greylight_ui" transparent="1" valign="center" halign="center">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="940,373" size="123,39" font="Regular; 33" backgroundColor="greylight_ui" transparent="1" halign="right" valign="top">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">
+    </convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="1503,373" size="123,39" font="Regular; 33" backgroundColor="greylight_ui" transparent="1" valign="top">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <ePixmap pixmap="DinobotUI-FHD/progress_bg.png" position="1073,372" zPosition="-1" size="420,45" alphatest="blend" transparent="0" />
+  <widget source="ServiceEvent" render="Progress" pixmap="DinobotUI-FHD/bar_ui.png" position="1073,391" size="420,6" transparent="1" zPosition="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="930,455" size="699,36" halign="left" valign="center" foregroundColor="grey_ui" backgroundColor="background" transparent="1" noWrap="1" font="Regular; 27">
+    <convert type="DBNextEvents">Event1,noDuration</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="930,491" size="699,36" halign="left" valign="center" foregroundColor="grey_ui" backgroundColor="background" transparent="1" noWrap="1" font="Regular; 27">
+    <convert type="DBNextEvents">Event2,noDuration</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="930,527" size="699,36" halign="left" valign="center" foregroundColor="grey_ui" backgroundColor="background" transparent="1" noWrap="1" font="Regular; 27">
+    <convert type="DBNextEvents">Event3,noDuration</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="930,563" size="699,36" halign="left" valign="center" foregroundColor="grey_ui" backgroundColor="background" transparent="1" noWrap="1" font="Regular; 27">
+    <convert type="DBNextEvents">Event4,noDuration</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="930,599" size="699,36" halign="left" valign="center" foregroundColor="grey_ui" backgroundColor="background" transparent="1" noWrap="1" font="Regular; 27">
+    <convert type="DBNextEvents">Event5,noDuration</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="930,635" size="699,36" halign="left" valign="center" foregroundColor="grey_ui" backgroundColor="background" transparent="1" noWrap="1" font="Regular; 27">
+    <convert type="DBNextEvents">Event6,noDuration</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="930,671" size="699,36" halign="left" valign="center" foregroundColor="grey_ui" backgroundColor="background" transparent="1" noWrap="1" font="Regular; 27">
+    <convert type="DBNextEvents">Event7,noDuration</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="930,707" size="699,36" halign="left" valign="center" foregroundColor="grey_ui" backgroundColor="background" transparent="1" noWrap="1" font="Regular; 27">
+    <convert type="DBNextEvents">Event8,noDuration</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="930,743" size="699,36" halign="left" valign="center" foregroundColor="grey_ui" backgroundColor="background" transparent="1" noWrap="1" font="Regular; 27">
+    <convert type="DBNextEvents">Event9,noDuration</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="930,779" size="699,36" halign="left" valign="center" foregroundColor="grey_ui" backgroundColor="background" transparent="1" noWrap="1" font="Regular; 27">
+    <convert type="DBNextEvents">Event10,noDuration</convert>
+  </widget>
+    <panel name="btn_ch" />
+  </screen>
+  <screen name="Ch_Setup" title="Channel Setup" >
+    <ePixmap pixmap="DinobotUI-FHD/android/menubg.png" position="0,0" size="1920,1080" zPosition="-3" alphatest="off" />
+    <widget source="Title" render="Label" position="203,170" size="600,50" font="Art1; 40" transparent="1" halign="center" foregroundColor="white" backgroundColor="grey_ui" noWrap="1" />
+	<eLabel name="Line" position="210,236" size="591,1" backgroundColor="darkgrey1"/>
+    <widget name="menu" enableWrapAround="1" position="860,220" size="815,592"  font="Art1; 27" foregroundColor="white"
+backgroundColor="grey_ui" foregroundColorSelected="bluelight_ui"  backgroundColorSelected="background"  selectionPixmap="DinobotUI-FHD/android/sel850x45.png"  zPosition="1"  transparent="1" itemHeight="45" />
+  </screen>
+  <screen name="SimpleChannel" title="SimpleChannelSelection" >
+    <ePixmap pixmap="DinobotUI-FHD/android/menubg.png" position="0,0" size="1920,1080" zPosition="-3" alphatest="off" />
+    <widget source="Title" render="Label" position="203,170" size="600,50" font="Art1; 40" transparent="1" halign="center" foregroundColor="white" backgroundColor="grey_ui" noWrap="1" />
+	<eLabel name="Line" position="210,236" size="591,1" backgroundColor="darkgrey1"/>
+    <widget name="list" enableWrapAround="1" position="860,220" size="815,592"  font="Art1; 27" foregroundColor="foreground"
+backgroundColor="background" foregroundColorSelected="BlackSelUi"   selectionPixmap="DinobotUI-FHD/images/sel815x45.png"  zPosition="1"  transparent="1" itemHeight="45" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig1" />
+     <panel name="EventDescription" />
+  </screen>
+  <screen name="EventDescription"  title="View Event" transparent="0">
+    <widget source="session.Event_Now" render="Label" position="215,565" zPosition="1" size="100,35" font="Regular;25" foregroundColor="foreground" backgroundColor="grey_ui" halign="right" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">
+      </convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="665,565" zPosition="1" size="100,35" font="Regular;25" halign="center" foregroundColor="foreground" backgroundColor="grey_ui" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Progress" position="325,570" zPosition="1" pixmap="DinobotUI-FHD/buttons/progress.png" size="345,22" borderWidth="1" borderColor="uncccccc">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="205,625" zPosition="1" size="597,235" font="Regular;26" halign="center" foregroundColor="foreground"  backgroundColor="grey_ui" transparent="1">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+  </screen>
+  <screen name="ViewEvent" title="View Event" >
+    <ePixmap pixmap="DinobotUI-FHD/android/menubg.png" position="0,0" size="1920,1080" zPosition="-3" alphatest="off" />
+    <eLabel text="View Event" render="Label" position="203,170" size="600,50" font="Art1; 40" transparent="1" halign="center" foregroundColor="white" backgroundColor="grey_ui" noWrap="1" />
+	<eLabel name="Line" position="210,236" size="591,1" backgroundColor="darkgrey1"/>
+    <widget name="channel"  position="860,200" size="815,35"  font="Art1; 30" halign="center" foregroundColor="bluelight_ui"
+backgroundColor="background" />
+    <widget name="datetime" position="860,260" size="400,35"  font="Art1; 28" halign="center"  foregroundColor="foreground"
+backgroundColor="background" />
+    <widget name="duration" position="1270,260" size="405,35"  font="Art1; 28" halign="center"  foregroundColor="foreground"
+backgroundColor="background" />
+    <widget name="epg_description" position="860,310" size="815,400"  font="Art1; 30" halign="center"  foregroundColor="foreground"
+backgroundColor="background" />
+     <eLabel text="Closed" position="647,970" size="280,70" zPosition="1" font="Regular;26" halign="center" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+     <panel name="ClockMenu" />
+     <panel name="rg" />
+     <panel name="Pig1" />
+  </screen>
+</skin>

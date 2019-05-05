@@ -1,0 +1,16 @@
+<skin>
+
+     <screen name="ClockMenu">
+    <widget source="global.CurrentTime" render="Label" position="1365,75" size="320,40" font="Art1; 30" halign="left" backgroundColor="grey_ui" transparent="1" foregroundColor="white">
+      <convert type="ClockToText">Date</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1650,75" size="200,40" font="Art1; 30" halign="center" backgroundColor="grey_ui" transparent="1" foregroundColor="white">
+      <convert type="ClockToText">Format:%H:%M:%S</convert>
+    </widget>
+	</screen>
+	<screen name="ClockMmp">	
+      <widget backgroundColor="Background" font="Art1; 65" halign="left" position="1467,51" render="Label" size="169,80" source="global.CurrentTime" transparent="1" valign="top">
+        <convert type="ClockToText">Format:%H:%M</convert>
+      </widget>
+	</screen>
+</skin>

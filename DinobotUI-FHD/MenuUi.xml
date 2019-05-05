@@ -1,0 +1,723 @@
+<skin>
+
+              <!-- Main Menu -->
+  <screen name="MenuListbox"  title="Main menu" transparent="0">
+    <ePixmap pixmap="DinobotUI-FHD/android/menubg.png" position="0,0" size="1920,1080" zPosition="-3" alphatest="off" />
+    <widget source="menu" render="Listbox" enableWrapAround="1" position="205,220" size="597,615" foregroundColor="foreground"
+backgroundColor="grey_ui" foregroundColorSelected="white"  backgroundColorSelected="grey_ui" zPosition="1" scrollbarMode="showNever" selectionPixmap="DinobotUI-FHD/images/sel597x60.png" transparent="1">
+      <convert type="TemplatedMultiContent">
+{"template": [ MultiContentEntryText(pos = (60, 9), size = (600, 60), flags = RT_HALIGN_LEFT, text =0) ],
+"fonts": [gFont("Art1",36)],
+"itemHeight":60
+}
+</convert>
+    </widget>
+  </screen>
+  <screen name="Pig1" >
+    <widget source="session.VideoPicture" render="Pig" position="272,276" size="465,263" backgroundColor="transparent" />
+  </screen>
+  <screen name="Pig2" >
+    <widget source="session.VideoPicture" render="Pig" position="1200,220"  size="465,263" backgroundColor="transparent" />
+	</screen>
+  <screen name="Menu" position="0,0" size="1920,1080" title="Main Menu" backgroundColor="transpBlack" flags="wfNoBorder">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/panel_info.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">Infopanel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/info.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">info_screen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_mainmenu_timer.png" position="940,550" size="256,256"  zPosition="2" alphatest="blend">
+			<convert type="MenuEntryCompare">timer_menu</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_mainmenu_pluginmanager.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">plugin_selection</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/portal.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">Stalker Plugin</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/emc.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">emc</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/service_info.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">media_player</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/music.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">merlin_music_player</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/youtube.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">youtubetv</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/service_info.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">moviebrowser</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/setup.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">setup_selection</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/reset.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">standby_restart_list</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+  </screen>
+  <screen name="menu_setup" position="0,0" size="1920,1080" title="Setup Menu" backgroundColor="transpBlack" flags="wfNoBorder">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/service_info.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">video_menu</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_setup_audio.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">audio_menu</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_recording_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">rec_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_setup_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">system_selection</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_epg_epg_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">epg_menu</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_setup_tuner.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">service_searching_selection</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_setup_ci.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">cam_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_setup_parental.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">parental_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_setup_software_manager.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">software_manager</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_setup_vmc_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">vmc_init_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_system_extended_selection.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">extended_selection</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/alexa.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">startsetup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+  </screen>
+  <screen name="menu_system" position="0,0" size="1920,1080" title="System Menu" backgroundColor="transpBlack" flags="wfNoBorder">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_osd_menu_user_interface.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">user_interface</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_system_remote_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">remote_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_system_channelselection_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">channelselection_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_system_usage_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">usage_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_specialfeatures_menu.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">specialfeatures_menu</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_osd_menu_skin_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">skin_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_display_selection.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">display_selection</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_osd_menu_buttonsetup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">buttonsetup_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/remotecontrol.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">RCU Select</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_osd_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">osd_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_display_LED_Giga.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">LED_Giga</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_numzapext_setup.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">numzapext_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_system_VFD_INI.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">vfd_ew</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_system_language_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">language_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_dvdplayer_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">dvdplayer_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_system_av_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">av_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_system_autores_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">autores_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_mainmenu_pluginhider.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">pluginhider_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_scan_streamconvert.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">vps</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/remotecontrol.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">remotecontrolcode</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/led.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">ledManager</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<!-- ... for systems with entry in menu_system and not in menu_extended /-->
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/fan.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">tempfancontrol</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_time_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">permanent_clock</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/bluetooth.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">bluetooth_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/pplayer.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">serviceapp_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">iptv_config</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+  </screen>
+  <screen name="Setup" position="0,0" size="1920,1080" title="Setup" backgroundColor="transpBlack" flags="wfNoBorder">
+    <ePixmap pixmap="DinobotUI-FHD/android/menubg.png" position="0,0" size="1920,1080" zPosition="-3" alphatest="off" />
+    <widget source="Title" render="Label" position="203,170" size="600,50" font="Art1; 40" transparent="1" halign="center" foregroundColor="white" backgroundColor="grey_ui" noWrap="1" />
+	<eLabel name="Line" position="210,236" size="591,1" backgroundColor="darkgrey1"/>
+    <widget name="config" enableWrapAround="1" position="863,220" size="815,592"  font="Art1; 27" foregroundColor="foreground"
+backgroundColor="background" foregroundColorSelected="BlackSelUi"   selectionPixmap="DinobotUI-FHD/images/sel815x45.png"  zPosition="1"  transparent="1" itemHeight="45" />
+     <panel name="ClockMenu" />
+     <panel name="rg" />
+    <widget name="description" position="203,565" size="600,400" font="Regular;25" halign="center" valign="center" transparent="1" zPosition="1" foregroundColor="foreground" backgroundColor="grey_ui" />
+     <panel name="Pig1" />
+  </screen>
+  <screen name="menu_harddisk" position="0,0" size="1920,1080" title="Harddisk" backgroundColor="transpBlack" flags="wfNoBorder">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_harddisk_harddisk_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">harddisk_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_harddisk_harddisk_init.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">harddisk_init</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_harddisk_harddisk_check.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">harddisk_check</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_harddisk_harddisk_convert.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">harddisk_convert</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+  </screen>
+  <screen name="menu_shutdown" position="0,0" size="1920,1080" title="Shutdown" backgroundColor="transpBlack" flags="wfNoBorder">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/power_off.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">deep_standby</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/restart.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">restart</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/reboot.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">restart_enigma</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/restart.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">Hardreset</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/power.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">standby</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/power_timer.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">sleep</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_timermenu_powertimers.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">powertimer_edit</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/usage_setup.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">maintenance_mode</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+  </screen>
+  <screen name="menu_scan" position="0,0" size="1920,1080" title="Scan" backgroundColor="transpBlack" flags="wfNoBorder">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_scan_tuner_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">tuner_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_scan_auto_scan.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">auto_scan</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_scan_manual_scan.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">manual_scan</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_scan_satfinder.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">satfinder</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_scan_positioner_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">positioner_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_scan_autobouquetsmakermaker.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">autobouquetsmakermaker</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_scan_blindscan.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">blindscan</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_scan_satip.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">sat_ip_client</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_scan_streamconvert.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">streamconvert</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_scan_fast_scan.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">fastscan</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_mainmenu_pluginmanager.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">sundtek_control_enter</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/search.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">cablescan</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_scan_streamconvert.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">ipbox_client_Start</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/iptvimport.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">startimport</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+  </screen>
+  <screen name="menu_information" position="0,0" size="1920,1080" title="Information" backgroundColor="transpBlack" flags="wfNoBorder">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_information_supportchannel.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">supportchannel_YTChannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_information_about.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">about_screen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_information_device.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">device_screen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_information_service.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">service_info_screen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/weather.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">Weather_MSN</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+  </screen>
+	<screen name="menu_timermenu" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+	<panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_timermenu_autotimers.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">autotimer_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_timermenu_crontimers.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">crontimer_edit</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_timermenu_timers.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">timer_edit</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_timermenu_powertimers.png" position="940,550" size="256,256" alphatest="blend">
+			<convert type="MenuEntryCompare">powertimer_edit</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="menu_video_menu" position="0,0" size="1920,1080" title="Video menu" flags="wfNoBorder" backgroundColor="transparent">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/service_info.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">video_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_system_videoenhancement_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">videoenhancement_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_system_videofinetune_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">video_finetune</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/service_info.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">video_clipping</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="menu_audio_menu" position="0,0" size="1920,1080" title="Audio menu" flags="wfNoBorder" backgroundColor="transparent">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_setup_audio.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">audio_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_system_AutomaticVolumeAdjustment.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">Volume_Adjust</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_subtitle_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">subtitle_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_system_autolanguage_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">autolanguage_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_system_AutomaticVolumeAdjustment.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">AutomaticVolumeAdjustment</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+</screen>
+	<screen name="menu_rec" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_timshift_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">timshift_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_recording_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">recording_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_hdmirecord_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">hdmirecord_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="menu_cam" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_setup_ci.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">ci_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_setup_ci.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">ci_assign</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="menu_extended" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_hardisk_selection.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">hardisk_selection</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_system_network_menu.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">network_menu</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_hdmicec.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">hdmicec</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_time_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">time_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_logs_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">logs_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/fan.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">fansetup_config</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_setup_reset.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">factory_reset</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/fan.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">tempfancontrol</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_rfmod_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">rfmod_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_remotecode.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">remotecode</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="menu_display" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_display_display_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">display_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_display_lcd_skin_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">lcd_skin_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_display_lcd_skin_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">lcd4linux</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_system_VFD_INI.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">VFD_INI</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="menu_osd_menu" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_osd_menu_osdsetup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">osdsetup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_input_device_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">input_device_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_extended_keyboard.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">keyboard</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_osd_menu_osd3dsetup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">osd3dsetup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/usage_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">animation_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="menu_epg" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_epg_refresh.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">epgrefresh</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_epgloadsave_menu_loadepgcache.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">epgimporter</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_epg_epg_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">epg_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_epg_epgloadsave_menu.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">epgloadsave_menu</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_epg_setup_epgmulti.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">setup_epgmulti</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_epg_setup_epgenhanced.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">setup_epgenhanced</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_epg_setup_epginfobar.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">setup_epginfobar</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_epg_setup_epginfobargraphical.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">setup_epginfobargraphical</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_epg_setup_epggraphical.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">setup_epggraphical</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_epg_setup_epgmulti.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">setup_epgvertical</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="menu_epgloadsave_menu" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_epgloadsave_menu_saveepgcache.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">saveepgcache</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_epgloadsave_menu_loadepgcache.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">loadepgcache</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_epgloadsave_menu_deleteepgcache.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">deleteepgcache</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="menu_network" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+     <panel name="MenuListbox" />
+     <panel name="ClockMenu" />
+     <panel name="ok_ex" />
+     <panel name="Pig2" />
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_network_device_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">device_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_network_netmounts_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">netmounts_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_network_netafp_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">netafp_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_network_netftp_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">netftp_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_network_Inadyn_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">Inadyn_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_network_minidlna_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">minidlna_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_network_netnfs_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">netnfs_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_network_webif.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">openwebif</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_network_netvpn_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">netvpn_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_network_netsabnzbd_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">netsabnzbd_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_network_netsmba_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">netsmba_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_network_nettelnet_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">nettelnet_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_network_netushare_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">netushare_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="DinobotUI-FHD/icons/menu_network_netnfs_setup.png" position="940,550" size="256,256" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">netrts_setup</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+
+</skin>
