@@ -1,5 +1,5 @@
 # Enigma2 skin DinobotUI-FullHD
-This skin is inspired by the appearance of Dinobot4k Android TV box. Not 100% same as the original but pretty good applied to the Enigma2 box receiver. Skin with a simple look but still cool in view.
+This skin is inspired by the appearance of Android TV ui Dinobot4k. Not 100% same as the original but pretty good applied to the Enigma2 box receiver. Skin with a simple look but still cool in view.
 
 
 Screenshot:
